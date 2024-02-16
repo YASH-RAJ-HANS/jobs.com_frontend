@@ -60,12 +60,13 @@ const Home = () => {
     >
       <div
         style={{ height: "60vh" }}
-        className="gap-8 w-6/12 mt-4 flex flex-col items-center justify-center"
+        className="gap-4 w-6/12 mt-4 flex flex-col items-center justify-center"
       >
         <div className="px-10 font-bold text-6xl  text-center">
-          Search ,Apply & <br />Get Your  <span className="text-[rgb(108,59,194)]">dream Job</span> 
+          Search, Apply & <br />
+          Get Your <span className="text-[rgb(108,59,194)]">dream Job</span>
         </div>
-        <div className="px-20 font-mono text-center">
+        <div className="px-20 text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, .<br />
           sed do eiusmod tempor incididunt ut labore{" "}
         </div>
@@ -84,7 +85,8 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <marquee className="mb-8"
+      <marquee
+        className="mb-8"
         direction="left"
         behavior="scroll"
         scrollamount="10"
@@ -93,34 +95,35 @@ const Home = () => {
         {comments.map((comment, index) => (
           <span
             key={index}
-            style={{border:"1px solid black"}}
+            style={{ border: "1px solid black" }}
             className="mb-2 mr-10 px-3 lg:px-7 py-3 rounded "
           >
             {comment.text}
           </span>
         ))}
       </marquee>
-      <div style={{height:"60px",border:"1px solid black"}} className="flex items-center p-5">
-      <marquee
-        direction="right"
-        style={{height:"60px"}}
-        
-        behavior="scroll"
-        scrollamount="10"
-        loop="infinite"
+      <div
+        style={{ height: "60px", border: "1px solid black" }}
+        className="flex items-center p-5"
       >
-        {comments.map((comment, index) => (
-          <span
-          style={{border:"1px solid black"}}
-            key={index}
-            className="mb-2 mr-10 px-6 py-2 rounded-full h-24"
-          >
-            {comment.text}
-          </span>
-        ))}
-      </marquee>
+        <marquee
+          direction="right"
+          style={{ height: "60px" }}
+          behavior="scroll"
+          scrollamount="10"
+          loop="infinite"
+        >
+          {comments.map((comment, index) => (
+            <span
+              style={{ border: "1px solid black" }}
+              key={index}
+              className="mb-2 mr-10 px-6 py-2 rounded-full h-24"
+            >
+              {comment.text}
+            </span>
+          ))}
+        </marquee>
       </div>
-      
     </div>
   );
 };
