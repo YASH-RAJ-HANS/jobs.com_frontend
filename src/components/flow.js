@@ -1,20 +1,24 @@
-import React from 'react';
+import React from "react";
 import Image from "next/image";
 
 const Flow = () => {
   return (
-    <div className="bg-cover bg-center py-12 bg-white" style={{ backgroundImage: "url('/background-design.png')" }}>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div
+      className="bg-cover bg-center py-12 bg-white"
+      style={{ backgroundImage: "url('/background-design.png')" }}
+    >
+      <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
             Get Hired in
             <span className="text-purple-700"> 4 Quick Easy Steps</span>
           </p>
           <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-            The quickest and most effective way to get hired by the top firms working in global software development.
+            The quickest and most effective way to get hired by the top firms
+            working in global software development.
           </p>
         </div>
-        <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-4">
+        <div className="mt-20 grid grid-cols-1 gap-14 md:grid-cols-4">
           <StepCard
             index={0}
             icon={<UserIcon />}
@@ -43,17 +47,19 @@ const Flow = () => {
       </div>
     </div>
   );
-}
+};
 
 function StepCard({ index, icon, title, description }) {
-  const marginTop = index % 2 === 0 ? "-mt-7" : "";
+  const marginTop = index % 2 === 0 ? "-mt-10" : "";
 
   return (
     <div className={`flex flex-col border shadow-lg p-6 ${marginTop}`}>
       <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-50 text-orange-500 mx-auto">
         {icon}
       </div>
-      <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{title}</p>
+      <p className="mt-5 text-lg leading-6 font-medium text-gray-900">
+        {title}
+      </p>
       <p className="mt-2 text-base text-gray-500">{description}</p>
     </div>
   );
