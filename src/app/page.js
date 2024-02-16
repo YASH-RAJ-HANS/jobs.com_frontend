@@ -1,8 +1,11 @@
-import CareerOptions from "@/components/CareerOptions";
+
+// import Image from "next/image";
+// import Flow from "../components/flow";
 export default function Home() {
   return (
-     <div>
-       <CareerOptions/>
-     </div>
-  )
-};
+    <>
+      <p>WELCOME</p>
+    </>
+  );
+}
+
