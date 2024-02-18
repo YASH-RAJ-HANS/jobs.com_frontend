@@ -1,3 +1,4 @@
+import CareerOptions from "@/components/CareerOptions";
 import Footer from "@/components/Footer";
 import Home from "@/components/Home";
 import LatestJobs from "@/components/LatestJobs";
@@ -13,6 +14,7 @@ export default function page() {
         <Navbar />
         <Home />
         <Flow />
+        <CareerOptions />
         <LatestJobs />
         <br />
         <br />
