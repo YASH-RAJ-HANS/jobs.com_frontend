@@ -20,5 +20,15 @@ const CardDescription = ({ className, children }) => {
 const CardContent = ({ children }) => {
   return <div className="card-content">{children}</div>;
 };
+const CardFooter = ({ children, className }) => {
+  return <div className={`card-footer ${className}`}>{children}</div>;
+};
 
-export { Card, CardHeader, CardTitle, CardDescription, CardContent };
+export {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+};
