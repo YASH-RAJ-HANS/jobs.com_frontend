@@ -1,6 +1,7 @@
 "use client";
 import { React, useState } from "react";
-
+import Marquee from "react-fast-marquee";
+import PlayCircleFilledOutlinedIcon from '@mui/icons-material/PlayCircleFilledOutlined';
 const Home = () => {
   const [comments, setComments] = useState([
     {
@@ -70,60 +71,63 @@ const Home = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, .<br />
           sed do eiusmod tempor incididunt ut labore{" "}
         </div>
-        <div className="mt-5">
-          <button
+        <div className="mt-5 flex">
+        <button
             style={{ border: "1px solid black", marginTop: "-10px" }}
-            className="mr-2 lg:mr-4 px-4 lg:px-7 ml-4 mr-4 py-2 lg:py-3 h-10 lg:h-12 rounded hover:text-purple-700"
+            className="px-3 lg:px-7 py-2 lg:py-3 h-10 lg:h-12 rounded-lg text-white bg-violet-700 hover:bg-violet-800 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
           >
-            Login
+            Browse Jobs
           </button>
+          <div style={{  marginTop: "-10px" }} className="rounded-full bg-purple-700 h-12 w-12 ml-8 flex juatify-center items-center p-3 text-white">< PlayCircleFilledOutlinedIcon/></div>
           <button
-            style={{ border: "1px solid black", marginTop: "-10px" }}
-            className="px-3 lg:px-7 py-2 lg:py-3 h-10 lg:h-12 rounded text-white bg-violet-700 hover:bg-violet-800 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
+            style={{  marginTop: "-10px" }}
+            className="mr-2 lg:mr-4 px-2 font-bold lg:px-2 ml-2 mr-4 py-2 lg:py-3 h-10 lg:h-12 rounded hover:text-purple-700"
           >
-            Register
+           How it works?
           </button>
+          
         </div>
       </div>
-      <marquee
-        className="mb-8"
+      <Marquee
+        className=" h-24 mt-8"
         direction="left"
         behavior="scroll"
         scrollamount="10"
         loop="infinite"
+        speed="80"
+        pauseOnClick="true"
       >
         {comments.map((comment, index) => (
           <span
-            key={index}
-            style={{ border: "1px solid black" }}
-            className="mb-2 mr-10 px-3 lg:px-7 py-3 rounded "
+          key={index}
+          style={{border: "1px solid ",
+          borderColor: "linear-gradient(to right, #0074e4, #00a8e8)"}}
+          className="mb-2 rounded-full mr-10 px-3 lg:px-7 py-3 "
           >
             {comment.text}
           </span>
         ))}
-      </marquee>
-      <div
-        style={{ height: "60px", border: "1px solid black" }}
-        className="flex items-center p-5"
+      </Marquee>
+      <Marquee
+        className="mb-8 h-24"
+        direction="right"
+        behavior="scroll"
+        scrollamount="10"
+        loop="infinite"
+        speed="80"
+        pauseOnClick="true"
       >
-        <marquee
-          direction="right"
-          style={{ height: "60px" }}
-          behavior="scroll"
-          scrollamount="10"
-          loop="infinite"
-        >
-          {comments.map((comment, index) => (
-            <span
-              style={{ border: "1px solid black" }}
-              key={index}
-              className="mb-2 mr-10 px-6 py-2 rounded-full h-24"
-            >
-              {comment.text}
-            </span>
-          ))}
-        </marquee>
-      </div>
+        {comments.map((comment, index) => (
+          <span
+            key={index}
+            style={{border: "1px solid ",
+            borderColor: "linear-gradient(to right, #0074e4, #00a8e8)"}}
+            className="mb-2 rounded-full mr-10 px-3 lg:px-7 py-3 "
+          >
+            {comment.text}
+          </span>
+        ))}
+      </Marquee>
     </div>
   );
 };
