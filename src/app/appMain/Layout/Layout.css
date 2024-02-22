@@ -1,0 +1,19 @@
+.layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    /* border: 1px solid white; */
+    height: 100vh;
+    /* margin: auto; */
+    margin-top: 1.5vw;
+}
+#layoutChild{
+    width: 100vw;
+    /* border: 1px solid red; */
+    padding-top: 1rem;
+    min-height: 85vh;
+    display: flex;
+    justify-content: end;
+    background-color: rgb(226, 226, 226);
+}

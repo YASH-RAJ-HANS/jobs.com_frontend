@@ -1,10 +1,36 @@
 
 // import Image from "next/image";
+
+import CareerOptions from "@/components/CareerOptions";
+import Footer from "@/components/Footer";
+import LatestJobs from "@/components/LatestJobs";
+import Navbar from "@/components/Navbar";
+import Newsletter from "@/components/Newsletter";
+import Offer from "@/components/Offer";
+import Flow from "@/components/flow";
+import Home from "@/components/Home";
+
 // import Flow from "../components/flow";
-export default function Home() {
+export default function App() {
   return (
     <>
-      <p>WELCOME</p>
+      <div className="w-[90%] m-auto overflow-x-hidden">
+        <Navbar />
+        <Home />
+        <Flow />
+        <CareerOptions />
+        <br />
+        <br />
+        <LatestJobs />
+        <Offer />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Newsletter />
+      </div>{" "}
+      <Footer />
     </>
   );
 }
