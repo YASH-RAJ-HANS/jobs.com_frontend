@@ -16,6 +16,8 @@ export default function page() {
         <Home />
         <Flow />
         <CareerOptions />
+        <br />
+        <br />
         <LatestJobs />
         <Offer />
         <br />
