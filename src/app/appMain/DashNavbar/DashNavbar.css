@@ -1,9 +1,9 @@
 .sidebar{
-    width: 100vw;
+    width: 95vw;
     display:flex;
     justify-content: space-around;
-    height: 15vh;
-    
+    height: 12vh;
+    margin: auto;
     color: black;
 }
 .sidecontent{

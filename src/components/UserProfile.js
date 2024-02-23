@@ -7,11 +7,11 @@ import Projects from "./Projects";
 
 export default function UserProfile() {
   return (
-    <div className="bg-gray-100 p-8">
+    <div className="">
       {/* <Link className="inline-block text-blue-600" href="#">
         ← Back
       </Link> */}
-      <div className="mt-4 grid grid-cols-3 gap-8">
+      <div className=" grid grid-cols-3 gap-4">
         <div className="col-span-1 bg-white p-6 rounded-lg shadow">
           <div className="flex flex-col items-center text-center">
             <Avatar>
