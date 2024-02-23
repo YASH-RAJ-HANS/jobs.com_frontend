@@ -4,19 +4,14 @@ import Newsletter from "@/components/Newsletter";
 import Filtering from "@/components/Filtering";
 import React from "react";
 import Layout from "../appMain/Layout/Layout";
+import JobsListing from "@/components/JobsListing";
 
 export default function page() {
   return (
     <Layout>
-      <div className="w-[90%] m-auto">
-        {/* <Navbar /> */}
+      <div className=" flex justify-center w-full pl-3 pr-3">
         <Filtering />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        {/* <Newsletter /> */}
+        <JobsListing />
       </div>{" "}
       {/* <Footer /> */}
     </Layout>

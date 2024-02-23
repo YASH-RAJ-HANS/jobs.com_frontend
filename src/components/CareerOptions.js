@@ -47,7 +47,7 @@ export default function CareerOptions() {
   return (
     <div>
       <div className="flex justify-center">
-        <h1 className="text-4xl font-bold text-center mt-10 ">
+        <h1 className="text-3xl font-extrabold text-center mt-10 ">
           <span className="text-[#6A38C2]">Countless Career Options</span> Are
           Waiting <br />
           For You To Explore

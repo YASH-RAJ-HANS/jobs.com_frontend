@@ -1,9 +1,9 @@
-import "./Sidebar.css";
+import "./DashNavbar.css";
 import Image from "next/image";
 import { BiLogOutCircle } from "react-icons/bi";
 import Link from "next/link";
 
-export default function Sidebar() {
+export default function DashNavbar() {
   return (
     <div className="sidebar">
       {/* <Image
@@ -13,15 +13,17 @@ export default function Sidebar() {
         width={200}
         height={200}
       /> */}
-      <div className="font-bold flex justify-center items-center text-2xl">The Jobs Harbour</div>
+
+      <div className="font-bold flex justify-center items-center text-2xl">
+        <Link href="/"> The Jobs Harbour</Link>
+      </div>
 
       <div className="sidecontent">
-        <div className="h-full px-3 py-4 overflow-y-auto  dark:bg-gray-900">
+        <div className="h-full px-3 py-1 overflow-y-auto  dark:bg-gray-900">
           <ul className="space-y-4 font-medium flex justify-around">
-        
-          <li>
+            <li>
               <Link
-                href="/Dashboard"
+                href="/Profile"
                 className="flex items-center p-2 text-lg  text-gray-300  rounded-lg dark:text-white hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-700 group mt-4"
               >
                 <svg
@@ -41,7 +43,9 @@ export default function Sidebar() {
                     </g>
                   </g>
                 </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap text-black">Profile</span>
+                <span className="flex-1 ms-3 whitespace-nowrap text-black">
+                  Profile
+                </span>
               </Link>
             </li>
             <li>
@@ -62,8 +66,7 @@ export default function Sidebar() {
                 <span className="ms-3 text-black"> Analytics</span>
               </Link>
             </li>
-           
-          
+
             <li>
               <Link
                 href="/JobsPage"
@@ -97,7 +100,9 @@ export default function Sidebar() {
                 >
                   <path d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z" />
                 </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap text-black">Message</span>
+                <span className="flex-1 ms-3 whitespace-nowrap text-black">
+                  Message
+                </span>
                 <span className="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">
                   3
                 </span>
@@ -121,11 +126,11 @@ export default function Sidebar() {
                 >
                   <path d="M 37 48 C 36.824219 48 36.652344 47.953125 36.496094 47.863281 L 25 41.15625 L 13.503906 47.863281 C 13.195313 48.042969 12.8125 48.046875 12.503906 47.867188 C 12.191406 47.6875 12 47.359375 12 47 L 12 3 C 12 2.449219 12.449219 2 13 2 L 37 2 C 37.554688 2 38 2.449219 38 3 L 38 47 C 38 47.359375 37.808594 47.6875 37.496094 47.867188 C 37.34375 47.957031 37.171875 48 37 48 Z"></path>
                 </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap text-black">Discover</span>
+                <span className="flex-1 ms-3 whitespace-nowrap text-black">
+                  Discover
+                </span>
               </Link>
             </li>
-
-           
           </ul>
           {/* <div
             id="dropdown-cta"

@@ -1,15 +1,15 @@
 "use client";
 
-import React, { useState } from 'react';
-import { FiChevronUp, FiChevronDown } from 'react-icons/fi'; // Import icons
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
+import React, { useState } from "react";
+import { FiChevronUp, FiChevronDown } from "react-icons/fi"; // Import icons
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
 
 export default function Filtering() {
   return (
-    <div className="flex flex-col mt-6 w-[20%]">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6 ">Filter Jobs</h2>
-      <div className=" p-4 bg-gray-100">
+    <div className="flex flex-col mt-1 w-[20%]">
+      {/* <h2 className="text-2xl font-bold text-gray-900 mb-2 "> Jobs</h2> */}
+      <div className="pr-4">
         <div className="space-y-4">
           <CollapsibleSection title="Company Type">
             <CheckboxOption id="startup" label="Startup" />
@@ -28,9 +28,15 @@ export default function Filtering() {
             <CheckboxOption id="new-delhi" label="New Delhi" />
           </CollapsibleSection>
           <CollapsibleSection title="Industry">
-            <CheckboxOption id="financial-services" label="Financial Services" />
+            <CheckboxOption
+              id="financial-services"
+              label="Financial Services"
+            />
             <CheckboxOption id="insurance" label="Insurance" />
-            <CheckboxOption id="hardware-networking" label="Hardware Networking" />
+            <CheckboxOption
+              id="hardware-networking"
+              label="Hardware Networking"
+            />
             <CheckboxOption id="marketing" label="Marketing" />
             <CheckboxOption id="information-technology" label="IT" />
             <CheckboxOption id="mechanical" label="Mechanical" />
@@ -50,27 +56,28 @@ export default function Filtering() {
           </CollapsibleSection>
         </div>
       </div>
-      <div className="w-2/3 p-4">
-        {/* Right panel content goes here */}
-      </div>
+      <div className="w-2/3 p-4">{/* Right panel content goes here */}</div>
     </div>
   );
 }
 
 const CollapsibleSection = ({ title, children }) => {
-  const [isOpen, setIsOpen] = useState(true); 
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-md">
-      <div className="flex justify-between items-center cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+      <div
+        className="flex justify-between items-center cursor-pointer"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-        {isOpen ? <FiChevronUp className="text-gray-600 w-6 h-6" /> : <FiChevronDown className="text-gray-600 w-6 h-6" />}
+        {isOpen ? (
+          <FiChevronUp className="text-gray-600 w-6 h-6" />
+        ) : (
+          <FiChevronDown className="text-gray-600 w-6 h-6" />
+        )}
       </div>
-      {isOpen && (
-        <div className="space-y-2 mt-2">
-          {children}
-        </div>
-      )}
+      {isOpen && <div className="space-y-2 mt-2">{children}</div>}
     </div>
   );
 };
@@ -80,7 +87,6 @@ const CheckboxOption = ({ id, label }) => (
     control={<Checkbox id={id} />}
     label={label}
     className="text-gray-800"
-    style={{display: 'block'}}
+    style={{ display: "block" }}
   />
 );
-
