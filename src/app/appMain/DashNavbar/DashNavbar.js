@@ -6,14 +6,6 @@ import Link from "next/link";
 export default function DashNavbar() {
   return (
     <div className="sidebar">
-      {/* <Image
-        className="mt-6"
-        src="/images/logo.png"
-        alt="logo"
-        width={200}
-        height={200}
-      /> */}
-
       <div className="font-bold flex justify-center items-center text-2xl">
         <Link href="/"> The Jobs Harbour</Link>
       </div>

@@ -2,6 +2,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.teamimg{
+background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+}
  
 @layer base {
   :root {
