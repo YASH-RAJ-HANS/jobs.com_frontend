@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { React, useState } from "react";
 
 const Navbar = () => {
@@ -6,25 +7,18 @@ const Navbar = () => {
     {
       id: 1,
       text: "Home",
+      link: "/",
     },
 
     {
       id: 2,
       text: "About",
+      link: "/About",
     },
-
     {
       id: 3,
-      text: "Jobs",
-    },
-
-    {
-      id: 4,
-      text: "Services",
-    },
-    {
-      id: 5,
       text: "ContactUs",
+      link: "/",
     },
   ]);
   return (
@@ -37,12 +31,14 @@ const Navbar = () => {
       </div>
       <div className="w-full lg:w-4/6 flex flex-col lg:flex-row justify-between font-semibold">
         {comments.map((comment, index) => (
-          <div
-            key={index}
-            className="mb-2 m-2 mr-2 lg:mb-0 cursor-pointer hover:text-purple-700"
-          >
-            {comment.text}
-          </div>
+          <Link href={comment.link}>
+            <div
+              key={index}
+              className="mb-2 m-2 mr-2 lg:mb-0 cursor-pointer hover:text-purple-700"
+            >
+              {comment.text}
+            </div>
+          </Link>
         ))}
         <button
           style={{ border: "1px solid black", marginTop: "-10px" }}
