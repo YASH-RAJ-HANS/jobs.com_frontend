@@ -18,6 +18,18 @@ const Navbar = () => {
     },
     {
       id: 3,
+
+      text: "Jobs",
+    },
+
+    {
+      id: 4,
+      text: "Company",
+    },
+    {
+      id: 5,
+=======
+
       text: "ContactUs",
       link: "/",
     },
