@@ -5,6 +5,7 @@ import LatestJobs from "@/components/LatestJobs";
 import Navbar from "@/components/Navbar";
 import Newsletter from "@/components/Newsletter";
 import Offer from "@/components/Offer";
+import UpComing from "@/components/UpComing";
 import Flow from "@/components/flow";
 import React from "react";
 
@@ -20,6 +21,7 @@ export default function page() {
         <br />
         <LatestJobs />
         <Offer />
+        <UpComing />
         <br />
         <br />
         <br />

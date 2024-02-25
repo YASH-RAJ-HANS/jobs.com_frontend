@@ -1,4 +1,3 @@
-
 // import Image from "next/image";
 
 import CareerOptions from "@/components/CareerOptions";
@@ -9,6 +8,7 @@ import Newsletter from "@/components/Newsletter";
 import Offer from "@/components/Offer";
 import Flow from "@/components/flow";
 import Home from "@/components/Home";
+import UpComing from "@/components/UpComing";
 
 // import Flow from "../components/flow";
 export default function App() {
@@ -23,6 +23,7 @@ export default function App() {
         <br />
         <LatestJobs />
         <Offer />
+        <UpComing />
         <br />
         <br />
         <br />
@@ -34,4 +35,3 @@ export default function App() {
     </>
   );
 }
-

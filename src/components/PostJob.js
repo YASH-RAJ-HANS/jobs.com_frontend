@@ -117,7 +117,7 @@ export default function PostJob() {
           <br />
           <Input
             id="address"
-            placeholder="Enter your location"
+            placeholder="Enter eligible batch"
             required
             className="w-96"
           />
