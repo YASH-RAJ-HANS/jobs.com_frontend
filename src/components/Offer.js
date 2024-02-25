@@ -3,7 +3,9 @@ export default function Offer() {
     <div className="bg-white py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className=" mb-10">
-          <h2 className="text-3xl font-bold text-gray-900">What We Offer</h2>
+          <h2 className="text-3xl font-bold text-gray-900">
+            What We <span className="text-[#6B39C1]">Offer</span>{" "}
+          </h2>
           <p className="mt-4 text-lg text-gray-500">
             The Jobs Harbour is the right platform for you to get serious job{" "}
             <br />
