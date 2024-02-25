@@ -5,8 +5,8 @@ const Card = ({ className, children }) => {
   return <div className={`card ${className}`}>{children}</div>;
 };
 
-const CardHeader = ({ children }) => {
-  return <div className="card-header">{children}</div>;
+const CardHeader = ({ children, className }) => {
+  return <div className={`card-header ${className}`}>{children}</div>;
 };
 
 const CardTitle = ({ className, children }) => {
@@ -23,7 +23,6 @@ const CardContent = ({ children }) => {
 const CardFooter = ({ children, className }) => {
   return <div className={`card-footer ${className}`}>{children}</div>;
 };
-
 
 export {
   Card,
