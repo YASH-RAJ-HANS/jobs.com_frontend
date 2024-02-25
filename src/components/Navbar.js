@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { React, useState } from "react";
-import Link from "next/link";
 
 const Navbar = () => {
   const [comments, setComments] = useState([
@@ -18,18 +17,11 @@ const Navbar = () => {
     },
     {
       id: 3,
-
-      text: "Jobs",
+      text: "Company",
+      link: "/Comany",
     },
-
     {
       id: 4,
-      text: "Company",
-    },
-    {
-      id: 5,
-=======
-
       text: "ContactUs",
       link: "/",
     },
@@ -53,13 +45,13 @@ const Navbar = () => {
             </div>
           </Link>
         ))}
-        <Link href="/SignUp" >
-        <button
-          style={{ border: "1px solid black", marginTop: "-10px" }}
-          className="mr-2 lg:mr-4 px-4 lg:px-7 ml-4 mr-4 py-2 lg:py-3 h-10 lg:h-12 rounded hover:text-purple-700"
-        >
-          Login
-        </button>
+        <Link href="/SignUp">
+          <button
+            style={{ border: "1px solid black", marginTop: "-10px" }}
+            className="mr-2 lg:mr-4 px-4 lg:px-7 ml-4 mr-4 py-2 lg:py-3 h-10 lg:h-12 rounded hover:text-purple-700"
+          >
+            Login
+          </button>
         </Link>
         {/* <button
           style={{ border: "1px solid black", marginTop: "-10px" }}
