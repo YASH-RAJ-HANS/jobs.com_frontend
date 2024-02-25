@@ -126,7 +126,7 @@ export default function PostJob() {
       <br />
       <CardFooter className="flex justify-left">
         <Button type="submit" className="bg-black p-2 rounded text-white w-96">
-          Submit Application
+          Submit
         </Button>
       </CardFooter>
          
