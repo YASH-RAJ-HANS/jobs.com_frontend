@@ -109,9 +109,10 @@ const Home = () => {
             key={index}
             style={{
               border: "1px solid ",
-              borderColor: "linear-gradient(to right, #0074e4, #00a8e8)",
+              borderColor: comment.id % 2 == 0 ? "#6A38C2" : "black",
+              color: comment.id % 2 == 0 ? "#6A38C2" : "black",
             }}
-            className="mb-2 rounded-full mr-10 px-3 lg:px-7 py-3 "
+            className="mb-2 rounded-full mr-10 px-3 lg:px-7 py-3"
           >
             {comment.text}
           </span>
@@ -131,7 +132,8 @@ const Home = () => {
             key={index}
             style={{
               border: "1px solid ",
-              borderColor: "linear-gradient(to right, #0074e4, #00a8e8)",
+              borderColor: comment.id % 2 == 0 ? "#6A38C2" : "black",
+              color: comment.id % 2 == 0 ? "#6A38C2" : "black",
             }}
             className="mb-2 rounded-full mr-10 px-3 lg:px-7 py-3 "
           >
