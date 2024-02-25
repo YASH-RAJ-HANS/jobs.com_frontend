@@ -11,7 +11,7 @@ const Flow = () => {
         <div className="text-center">
           <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
             Get Hired in
-            <span className="text-purple-700"> 4 Quick Easy Steps</span>
+            <span className="text-[#6A38C2]"> 4 Quick Easy Steps</span>
           </p>
           <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
             The quickest and most effective way to get hired by the top firms

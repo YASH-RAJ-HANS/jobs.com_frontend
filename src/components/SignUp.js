@@ -11,6 +11,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import "./SignUp.css";
+import Link from "next/link";
 const SignUp = () => {
   const [isSignUpMode, setIsSignUpMode] = useState(false);
 
@@ -32,13 +33,9 @@ const SignUp = () => {
               <FaLock className=" w-6 h-6 mt-3 ml-3" />
               <input type="password" placeholder="Password" />
             </div>
+            <Link href="/" >
             <input type="submit" value="Login" className="btn bg-blue-500 hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition duration-500 ease-in-out transform hover:scale-105 flex items-center justify-center max-w-xs px-4 py-3 text-white rounded-full shadow-md" />
-            {/* <div className=" flex justify-evenly gap-4">
-              <FaFacebookF className=" w-6 h-6 hover:text-cyan-600" />
-              <FaTwitter className=" w-6 h-6 hover:text-cyan-600" />
-              <FaGoogle className=" w-6 h-6 hover:text-cyan-600" />
-              <FaLinkedinIn className=" w-6 h-6 hover:text-cyan-600" />
-            </div> */}
+            </Link>
             <button className="btn bg-blue-500 hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition duration-500 ease-in-out transform hover:scale-105 flex items-center justify-center max-w-xs px-4 py-3 text-white rounded-full shadow-md">
               <FaGoogle className="w-6 h-6 mr-2" />
               Sign In with Google
@@ -58,17 +55,13 @@ const SignUp = () => {
               <FaLock className=" w-6 h-6 mt-3 ml-3" />
               <input type="password" placeholder="Password" />
             </div>
+            <Link href="/" >
             <input
               type="submit"
               className="btn bg-blue-500 hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition duration-500 ease-in-out transform hover:scale-105 flex items-center justify-center max-w-xs px-4 py-3 text-white rounded-full shadow-md"
               value="Sign up"
             />
-            {/* <div className="flex justify-evenly gap-4">
-              <FaFacebookF className=" w-6 h-6 hover:text-cyan-600" />
-              <FaTwitter className=" w-6 h-6 hover:text-cyan-600" />
-              <FaGoogle className=" w-6 h-6 hover:text-cyan-600" />
-              <FaLinkedinIn className=" w-6 h-6 hover:text-cyan-600" />
-            </div> */}
+          </Link>
             <button className="btn bg-blue-500 hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition duration-500 ease-in-out transform hover:scale-105 flex items-center justify-center max-w-xs px-4 py-3 text-white rounded-full shadow-md">
               <FaGoogle className="w-6 h-6 mr-2" />
               Sign Up with Google

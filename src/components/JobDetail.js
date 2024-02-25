@@ -11,9 +11,9 @@ import {
 
 export default function JobDetail() {
   return (
-    <div className="bg-white p-6">
-      <div className="grid grid-cols-3 gap-8">
-        <div className="col-span-2 space-y-6">
+    <div className="">
+      <div className="grid grid-cols-3 gap-4">
+        <div className="col-span-2 space-y-6 bg-white p-4 rounded-md">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <img
@@ -92,8 +92,8 @@ export default function JobDetail() {
             </li>
           </ul>
         </div>
-        <div className="space-y-6">
-          <Card className="w-full border border-gray-300 p-4 rounded-sm">
+        <div className="space-y-3">
+          <Card className="w-full border border-gray-300 p-4 rounded-sm bg-white">
             <CardHeader>
               <CardTitle className="font-semibold mb-6">Company</CardTitle>
             </CardHeader>
@@ -113,7 +113,7 @@ export default function JobDetail() {
               <p className="text-gray-700">Sunnyvale, CA</p>
             </CardFooter>
           </Card>
-          <Card className="w-full border border-gray-300 p-4 rounded-sm">
+          <Card className="w-full border border-gray-300 p-4 rounded-sm bg-white">
             <CardHeader>
               <CardTitle className="font-semibold mb-6">Review</CardTitle>
             </CardHeader>
@@ -148,7 +148,7 @@ export default function JobDetail() {
               </ul>
             </CardContent>
           </Card>
-          <Card className="w-full border border-gray-300 p-4 rounded-sm">
+          <Card className="w-full border border-gray-300 p-4 rounded-sm bg-white">
             <CardHeader>
               <CardTitle className="font-semibold mb-6">
                 Benefits & Perks
